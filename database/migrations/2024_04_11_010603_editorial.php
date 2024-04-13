@@ -11,8 +11,9 @@ return new class extends Migration
     {
         Schema::create('editorial', function(Blueprint $table){
             $table->id();
-            $table->string('nombre');
-            $table->string('codEditorial');
+            $table->string('codEditorial',200);
+            $table->string('nombre',200);
+            $table->timestamps();
         });
     }
 
